@@ -1,0 +1,11 @@
+# Runs on the cPanel server after the `deploy` branch (the built site) is pulled.
+# Vite copies this file from public/ into dist/, so it lands at the deploy branch root.
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home2/jdacom/public_html/pirtsslotas
+    - umask 022
+    # Replace the document root contents, keeping cPanel-managed entries.
+    - /bin/find $DEPLOYPATH -mindepth 1 -maxdepth 1 ! -name .well-known ! -name cgi-bin ! -name .ftpquota -exec /bin/rm -rf {} +
+    - /bin/tar --exclude=./.git --exclude=./.cpanel.yml -cf - . | /bin/tar --no-same-permissions -xf - -C $DEPLOYPATH
+    # tar's ./ entry would copy the clone directory's 0700 mode onto the docroot.
+    - /bin/chmod 755 $DEPLOYPATH
