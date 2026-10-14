@@ -1,0 +1,16 @@
+@charset "UTF-8";
+/* CSS Document */
+*{padding:0;margin:0;list-style:none;outline:none;}
+body{font:14px Tahoma, Geneva, sans-serif;}
+#slideshowWrapper{position:relative;width:1366px;margin-left:-16.69921875%;}
+ul#slideshow{list-style:none;;margin-top:0%;width:1366px;height:647px;overflow:hidden;}
+p{text-align:center;}
+
+#top{background:#3b5998;width:100%;height:40px;margin-bottom:20px;}
+#top h1{color:#fff;font-weight:normal;font-size:18px;padding:7px 0 0 15px}
+#top h1 span{font-size:11px;}
+#top h1 a{text-decoration:underline;color:#fff;}
+#top h1 a:hover{text-decoration:none;}
+
+small a{color:#000;}
+#fssList {opacity: 0;}

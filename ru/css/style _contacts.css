@@ -1,0 +1,316 @@
+/*STYLESHEET RESET*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*STYLESHEET RESET END*/
+
+#wrapper {
+	width: 100%;
+	height: 1070px;
+	margin: auto;
+	overflow: hidden;
+}
+
+
+#content {
+	width: 1024px;
+	height: 1400px;
+	margin: auto;
+	position: relative;
+	top: 0;
+	overflow: visible;
+	}
+
+#header {
+	width: 1366px;
+	height: 806px;
+	margin-left: -16.69921875%;
+	background: url(../gfx/contacts-lv-back.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+	
+#nav {
+	width: 1024px;
+	height: 90px;
+	position: relative;
+	top: -797.5px;
+	overflow: hidden;
+}
+
+#logo {
+	width: 247px;
+	height: 70px;
+	position: relative;
+	top: 10px;
+	left: 10px;
+	background-image: url(../gfx/logo-white.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	float: left;
+}
+
+#menu {
+	width: 540px;
+	height: 20px;
+	position: relative;
+	margin-left: 350px;
+	top: 60px;
+}
+
+#menuitem-current, #menuitem {
+	width: 90px;
+	height: 20px;
+	float: left;
+	margin-left: 17.5px;
+}
+
+#menuitem-current a, #menuitem a {
+	display: block;
+	text-decoration: none;
+	color: white;
+	font-weight: 600;
+	font-family: 'Source Sans Pro', sans serif;
+	font-size: 16px;
+}
+
+#menuitem-current a, #langitem-current a {
+	opacity: 0.6;
+}
+
+#menuitem span, #menuitem-current span {
+	opacity: 0;
+}
+
+#lang {
+	height: 60px;
+	width: 30px;
+	position: relative;
+	top: 0px;
+	left: 990px;
+}
+
+#langitem-current, #langitem {
+	height: 20px;
+	width: 30px;
+	position: relative;
+	float: left;
+	top: -50px;
+}
+
+#langitem-current a, #langitem a {
+	height: 20px;
+	width: 30px;
+	display: block;
+	text-decoration: none;
+	color: white;
+	font-weight: 500;
+	font-family: 'Source Sans Pro', sans serif;
+	font-size: 16px;
+}
+
+#middle {
+	height: 300px;
+	width: 400px;
+	position: relative;
+	top: -715px;
+	margin: auto;
+	z-index: 1;
+}
+
+#buttons {
+	height: 40px;
+	width: 400px;
+	position: relative;
+	margin: auto;
+	top: 0px;
+	overflow: hidden;
+}
+
+#addressbutton, #bankingdetailsbutton {
+	height: 35px;
+	width: 150px;
+	position: relative;
+	float: left;
+	margin-left: 33.333333px;
+	top: 0;
+	border: solid 2px white;
+	cursor: pointer;
+}
+
+#addressbutton:hover, #bankingdetailsbutton:hover {
+	transition:All 1s ease;
+	-webkit-transition:All 1s ease;
+	-moz-transition:All 1s ease;
+	-o-transition:All 1s ease;
+	opacity: 0.5;
+}
+
+#addressbutton p, #bankingdetailsbutton p {
+	font-weight: 500;
+	font-family: 'Source Sans Pro', sans serif;
+	font-size: 22px;
+	text-align: center;
+	color: white;
+	position: relative;
+	top: 5px;
+	
+}
+
+#contactlines {
+	height: 190px;
+	width: 400px;
+	position: relative;
+	top: 10px;
+	margin: auto;
+}
+
+#line1, #line2, #line3, #line4, #line5  {
+	height: 30px;
+	width: 330px;
+	margin: auto;
+	margin-top: 10px;
+	position: relative;
+}
+
+#line1 p, #line2 p, #line3 p, #line4 p, #line5 p {
+	font-weight: 400;
+	font-family: 'Source Sans Pro', sans serif;
+	font-size: 18px;
+	text-align: left;
+	color: white;
+	
+}
+#footer {
+	width: 1024px;
+	height: 264px;
+	position: relative;
+	top: -390px;
+	margin: auto;
+}
+
+#footerback {
+	width: 1366px;
+	height: 264px;
+	position: relative;
+	top: 0;
+	margin-left: -16.69921875%;
+	background: url(../gfx/footer-back.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.footercolumn {
+	width: 130px;
+	height: 150px;
+	position: relative;
+	float: left;
+	margin-left: 50px;
+	top: -234px;
+
+}
+
+.footercolumnline {
+	width: 130px;
+	height: 23px;
+	margin:auto;
+	position: relative;
+	margin-top: 2.5px;
+}
+
+
+.footercolumn a, .footercolumn p {
+	text-decoration: none;
+	font-weight: 300;
+	font-family: 'Source Sans Pro', sans serif;
+	font-size: 18px;
+	color: white;
+	position: relative;
+	
+}
+
+.footercolumn p {
+	font-weight: 600;
+	font-size: 19px;
+	text-align: left;
+}
+
+#contacticons {
+	width: 41px;
+	height: 120px;
+	float: left;
+	position: relative;
+	top: -234px;
+	margin-left: 75px;
+	background: url(../gfx/cicons.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+#contactarea {
+	width: auto;
+	height: 120px;
+	float: left;
+	position: relative;
+	top: -250px;
+	margin-left: 20px;
+}
+
+.contactline {
+	font-weight: 300;
+	font-family: 'Source Sans Pro', sans serif;
+	font-size: 18px;
+	color: white;
+	position: relative;
+	margin-top: 19px;
+}
+
+#menuitem-current a:hover, #menuitem a:hover, #langitem-current a:hover, #langitem a:hover, .footercolumn a:hover,  {
+	transition:All 1s ease;
+	-webkit-transition:All 1s ease;
+	-moz-transition:All 1s ease;
+	-o-transition:All 1s ease;
+	opacity: 0.5;
+}

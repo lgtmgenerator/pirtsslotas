@@ -1,0 +1,122 @@
+[
+    {
+        "name": "Liepas pirtsslota",
+        "desc": "Liepas pirtsslotai piemīt maiga un attīroša iedarbība ar īpašu liepziedu aromātu.<br/><br/>Slotiņu izmanto pēršanai pirtī un masāžai. <br/><br/>Pirtsslotas garums ir 50-60cm.<br/> Roktura garums 10-15 cm.<br/><br/>Pirms lietošanas liepas pirtsslotu<br/> 1 stundu iepriekš izmērcēt vēsā ūdenī.",
+        "img": "gfx/productinfopics/liepa.jpg",
+        "price": "2.50"
+    },
+    {
+        "name": "Pīlādža pirtsslota",
+        "desc": "Pīlādža pirtsslotai piemīt ārstnieciska un enerģētiski aizsargājoša iedarbība. <br/><br/>Slotiņu izmanto pēršanai pirtī un masāžai. <br/><br/>Pirtsslotas garums ir 40-50cm.<br/> Roktura garums 10 cm.<br/><br/>Pirms lietošanas pīlādža pirtsslotu<br/> 1 stundas iepriekš izmērcēt vēsā ūdenī.",
+        "img": "gfx/productinfopics/piladzis.jpg",
+        "price": "2.50"
+    },
+    {
+        "name": "Bērza pirtsslota",
+        "desc": "Bērza pirtsslotai piemīt vērtīgas ēteriskās eļļas, A un C vitamīni. Īpaši relaksējošs aromāts.<br/><br/>Slotiņu izmanto pēršanai pirtī un masāžai. <br/><br/>Pirtsslotas garums ir 50-60cm.<br/> Roktura garums 10-15 cm.<br/><br/>Pirms lietošanas bērza pirtsslotu<br/> 3 stundas iepriekš izmērcēt vēsā ūdenī.",
+        "img": "gfx/productinfopics/berzs.jpg",
+        "price": "2.50"
+    },
+    {
+        "name": "Kļavas pirtsslota",
+        "desc": "Kļavas pirtsslotai piemīt maiga, nomierinoša un organisma līdzsvaroša iedarbība.<br/><br/>Slotiņu izmanto pēršanai pirtī un masāžai. <br/><br/>Pirtsslotas garums ir 50cm.<br/> Roktura garums 10 cm.<br/><br/>Pirms lietošanas kļavas pirtsslotu<br/> 1 stundu iepriekš izmērcēt vēsā ūdenī. ",
+        "img": "gfx/productinfopics/klava.jpg",
+        "price": "2.50"
+    },
+    {
+        "name": "Ozola pirtsslota",
+        "desc": "Ozola pirtsslotai piemīt karsējoša un attīroša iedarbība. Īpaši piemērota karstuma cienītājiem.<br/><br/>Slotiņu izmanto pēršanai pirtī un masāžai.<br/><br/>Pirtsslotas garums ir 50-60cm.<br/> Roktura garums 10-15 cm.<br/><br/>Pirms lietošanas bērza pirtsslotu<br/> 4 stundas iepriekš izmērcēt vēsā ūdenī.",
+        "img": "gfx/productinfopics/ozols.jpg",
+        "price": "2.50"
+    },
+    {
+        "name": "Jaukta bērza ozola pirtsslota",
+        "desc": "Jauktai bērza ozola pirtsslotai piemīt attīroša un relaksējoša iedarbība.<br/><br/>Slotiņu izmanto pēršanai pirtī un masāžai.Slotiņu var izmantot kā pagalvi.<br/><br/>Pirtsslotas garums ir 50-60cm.<br/> Roktura garums 10-15 cm.<br/><br/>Pirms lietošanas bērza pirtsslotu<br/> 3 stundas iepriekš izmērcēt vēsā ūdenī.",
+        "img": "gfx/productinfopics/ozols.jpg",
+        "price": "2.50"
+    },
+    {
+        "name": "Vībotnes pirtsslota",
+        "desc": "Vībotnes pirtsslota piemērota reimatisku un galvas sāpju novēršanai. Īpaši izteikts aromāts, attīra un aromatizē pirts gaisu.<br/><br/>Slotiņu izmanto pēršanai pirtī un masāžai.<br/><br/>Pirtsslotas garums ir 40-50 cm.<br/> Roktura garums 10 cm.<br/><br/>Pirms lietošanas vībotnes pirtsslotu iepriekš iemērkt vēsā ūdenī.",
+        "img": "gfx/productinfopics/vibotne.JPG",
+        "price": "2.50"
+    },
+    {
+        "name": "Ārstniecisko augu pirtsslota",
+        "desc": "Ārstniecisko augu pirtsslotai piemīt ārstnieciska un relaksējoša iedarbība. Īpaši izteikts aromāts.<br/><br/>Pirtsslotas sastāvā ir piparmētra, vīgrieze, citronmelisa, pelašķis, raudene, vībotne, jasmīns, bērzs.<br/><br/>Slotiņu izmanto pēršanai pirtī un masāžai.Slotiņu var izmantot kā pagalvi.<br/><br/>Pirtsslotas garums ir 40-50 cm.<br/> Roktura garums 10-15 cm.<br/><br/>Pirms lietošanas ārstniecisko augu pirtsslotu iepriekš iemērkt vēsā ūdenī.",
+        "img": "gfx/productinfopics/zalu.jpg",
+        "price": "2.50"
+    },
+    {
+        "name": "Upeņu pirtsslota",
+        "desc": "Upeņu pirtsslota ir piemērota kaulu sāpju un ādas problēmu novēršanai. Īpaši relaksējošs aromāts.<br/><br/>Slotiņu izmanto pēršanai pirtī un masāžai.Slotiņu var izmantot kā pagalvi.<br/><br/>Pirtsslotas garums ir 40 cm.<br/> Roktura garums 10 cm.<br/><br/>Pirms lietošanas vībotnes pirtsslotu iepriekš iemērkt vēsā ūdenī.",
+        "img": "gfx/productinfopics/upenu.jpg",
+        "price": "2.50"
+    },
+    {
+        "name": "Vīgriezes pirtsslota",
+        "desc": "Vīgriezes pirtsslotai piemīt relaksējoša iedarbība. Īpaši salds aromāts.<br/><br/>Slotiņu izmanto pirts gaisa aromatizēšanai.<br/><br/>Pirtsslotas garums ir 30 cm.<br/> Roktura garums 5 cm.<br/><br/>Pirms lietošanas vīgriezes pirtsslotu ievietot karstā pirts gara ūdens traukā.",
+        "img": "gfx/productinfopics/vigrieze.jpg",
+        "price": "2.50"
+    },
+    {
+        "name": "Liepziedu ziepes",
+        "desc": "Liepziedu ziepēm piemīt nomierinoša un attīroša iedarbība. Īpaši relaksējošs aromāts.<br/><br/> Ziepju sastāvā ir kaltēti liepziedi, smilšērkšķu eļļa, liepziedu ēteriskā eļļa, pašu gatavota ziepju masa.<br/><br/>Liepziedu ziepju svars 100 grami.",
+        "img": "gfx/productinfopics/soap.jpg",
+        "price": "3.60"
+    },
+    {
+        "name": "Kazas piena ziepes",
+        "desc": "Kazas piena ziepēm piemīt nomierinoša un attīroša iedarbība. Īpaši piemērots jūtīgai ādai.<br/><br/> Ziepju sastāvā ir smilšērkšķu eļļa, sarkanais māls, kazas piens, pašu gatavota ziepju masa.<br/><br/>Liepziedu ziepju svars 100 grami. ",
+        "img": "gfx/productinfopics/soap2.jpg",
+        "price": "3.60"
+    },
+    {
+        "name": "Dzintara ziepes",
+        "desc": "Dzintara piena ziepēm piemīt nomierinoša un attīroša iedarbība.<br/><br/> Ziepju sastāvā ir smilšērkšķu eļļa, dzintara putekļi, dzeltenais māls, kazas piens, pašu gatavota ziepju masa.<br/><br/>Dzintara ziepju svars 100 grami.",
+        "img": "gfx/productinfopics/soap3.jpg",
+        "price": "3.60"
+    },
+    {
+        "name": "Ārstniecisko augu tējas",
+        "desc": "Pieejami ir 9 dažādi tēju veidi. <br/><br/>Miera tēja - kumelītes. <br/> Sirds tēja. <br/> Spirgtuma tēja. <br/> Sapņu tēja. <br/> Sieviešu tēja. <br/> Slaiduma tēja - ugunspuķe. <br/> Garšīgā tēja - pūķgalve. <br/>Atmiņas tēja - salvija. <br/> Imūnsistēmas tēja - eihinācija.",
+        "img": "gfx/productinfopics/tea.jpg",
+        "price": "2.50"
+    },
+    {
+        "name": "Masāžas pindas",
+        "desc": " Pieejamas ķiršu un zāļu tēju masāžas pindas. <br/><br/>Izmanto ķermeņa masāžai pirtī vai citur.",
+        "img": "gfx/productinfopics/pinda.jpg",
+        "price": "3.50"
+    },
+    {
+        "name": "Ēteriskās eļļas",
+        "desc": " Lavandas, piparmētru, tējas koka ētriskājām eļļām piemīt relaksējoša iedarbība <br/><br/> Apelsīna, laima, eikalipta ētriskajām eļļām piemīt uzmudrinoša iedarbība <br/><br/>Izmanto pirts gaisa aromatizēšanai, skrubim, masāžas eļļai.<br/><br/>Tilpums 5ml.",
+        "img": "gfx/productinfopics/ellas.jpg",
+        "price": "3.50"
+    },
+    {
+        "name": "Pirts aromātiskais gariņš",
+        "desc": "Pirts aromātiskajam gariņam piemīt relaksējoša iedarbība. <br/><br/> Izmanto pirts gaisa vai vannas aromatizēšanai.<br/><br/>Pirms lietošanas pirts gariņu ar maisņu ievietot karstā ūdenī pirtī vai vannā.",
+        "img": "gfx/productinfopics/garins.jpg",
+        "price": "0.80"
+    },
+    {
+        "name": "Ķermeņa skrubis",
+        "desc": "Ķermeņa skrubim piemīt attīroša un relaksējoša iedarbība. <br/><br/> Skrubja sastāvā ir zilais māls, sāls, soda, kaltēti ārstnieciskie augi, lavandas ēteriskā eļļa, vīnogu kauliņu eļļa. <br/><br/>Lai iegūtu labāko rezultātu, uzklāt pirtī vai uzreiz pēc vannas apmeklējuma. <br/><br/>Tilpums 30 ml. ",
+        "img": "gfx/productinfopics/skrubis.jpg",
+        "price": "5.00"
+    },
+    {
+        "name": "Tibetas skanošie trauki",
+        "desc": "Skanošos traukiem piemīt relaksējoša iedarbība gan pirtī, gan masāžas laikā.",
+        "img": "gfx/productinfopics/trauks.jpg",
+        "price": "17.00"
+    },
+    {
+        "name": "Dāvanu komplekts",
+        "desc": "Izvēlies produktus un mēs parūpēsimies par piegādi.",
+        "img": "gfx/productinfopics/gift.jpg",
+        "price": "1.00"
+    }
+]
