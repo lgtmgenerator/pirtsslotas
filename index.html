@@ -8,13 +8,22 @@
     <link rel="icon" href="/gfx/favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Load the font stylesheet without blocking the first paint. -->
     <link
+      rel="preload"
+      as="style"
       href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
+      onload="this.onload=null;this.rel='stylesheet'"
     />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;500;600;700&display=swap"
+      />
+    </noscript>
     <title>Pirtsslotas.lv</title>
-    <script type="module" crossorigin src="/assets/index-BovNwhVU.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-DEynam-N.css">
+    <script type="module" crossorigin src="/assets/index-DDcX_iYE.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-Y0MmDQDR.css">
   </head>
   <body>
     <div id="root"></div>

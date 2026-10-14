@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://pirtsslotas.lv/sitemap.xml
