@@ -24,7 +24,7 @@ export function Hero() {
       ))}
       <div className="banner__inner">
         <Nav />
-        <Link to={pagePath(lang, 'stories')} className="hero__button">
+        <Link viewTransition to={pagePath(lang, 'stories')} className="hero__button">
           {t.readMore}
         </Link>
       </div>

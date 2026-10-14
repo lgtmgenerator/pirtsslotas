@@ -18,7 +18,7 @@ export function Home() {
         <SectionHeading head={t.home.head} sub={t.home.sub} />
         <p className="notice" role="status">
           {t.home.notice}{' '}
-          <Link to={pagePath(lang, 'contacts')}>{t.nav.contacts.toLowerCase()} →</Link>
+          <Link viewTransition to={pagePath(lang, 'contacts')}>{t.nav.contacts.toLowerCase()} →</Link>
         </p>
         <ProductGrid products={FEATURED_PRODUCTS} />
       </section>

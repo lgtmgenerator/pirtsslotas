@@ -43,7 +43,7 @@ export function Footer() {
           <ul>
             {PAGES.map((p) => (
               <li key={p}>
-                <Link to={pagePath(lang, p)}>{t.nav[p]}</Link>
+                <Link viewTransition to={pagePath(lang, p)}>{t.nav[p]}</Link>
               </li>
             ))}
           </ul>
@@ -53,7 +53,7 @@ export function Footer() {
           <ul>
             {t.footer.besomList.map((name) => (
               <li key={name}>
-                <Link to={pagePath(lang, 'stories')}>{name}</Link>
+                <Link viewTransition to={pagePath(lang, 'stories')}>{name}</Link>
               </li>
             ))}
           </ul>
@@ -62,7 +62,7 @@ export function Footer() {
           <h2>{t.footer.more}</h2>
           <ul>
             <li>
-              <Link to={`${pagePath(lang, 'products')}#misc`}>{t.footer.otherProducts}</Link>
+              <Link viewTransition to={`${pagePath(lang, 'products')}#misc`}>{t.footer.otherProducts}</Link>
             </li>
           </ul>
         </div>

@@ -1,4 +1,4 @@
-import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
+import { createBrowserRouter, createRoutesFromElements, Navigate, Route, RouterProvider } from 'react-router-dom'
 import { DEFAULT_LANG, LANGS, pagePath, type Lang } from './i18n'
 import { Layout } from './components/Layout'
 import { Home } from './pages/Home'
@@ -34,10 +34,9 @@ function langRoutes(lang: Lang) {
   )
 }
 
+// A data router is required for <Link viewTransition> (page transitions) to work.
+const router = createBrowserRouter(createRoutesFromElements(LANGS.map(langRoutes)))
+
 export function App() {
-  return (
-    <BrowserRouter>
-      <Routes>{LANGS.map(langRoutes)}</Routes>
-    </BrowserRouter>
-  )
+  return <RouterProvider router={router} />
 }

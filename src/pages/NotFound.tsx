@@ -10,7 +10,7 @@ export function NotFound() {
       <Banner image="/gfx/productsheadernavback.jpg" ratio="1366 / 107" className="banner--strip" />
       <section className="section not-found">
         <h2>404</h2>
-        <Link to={pagePath(lang, 'home')}>{t.nav.home}</Link>
+        <Link viewTransition to={pagePath(lang, 'home')}>{t.nav.home}</Link>
       </section>
     </>
   )

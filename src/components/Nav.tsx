@@ -22,7 +22,7 @@ export function Nav() {
 
   return (
     <nav className={`nav${open ? ' is-open' : ''}`} aria-label="Main">
-      <Link to={pagePath(lang, 'home')} className="nav__logo" aria-label={t.siteName}>
+      <Link viewTransition to={pagePath(lang, 'home')} className="nav__logo" aria-label={t.siteName}>
         <img src="/gfx/logo-white.png" alt="" />
       </Link>
 
@@ -43,7 +43,7 @@ export function Nav() {
         <ul className="nav__menu">
           {PAGES.map((p) => (
             <li key={p}>
-              <NavLink to={pagePath(lang, p)} end>
+              <NavLink viewTransition to={pagePath(lang, p)} end>
                 {t.nav[p]}
               </NavLink>
             </li>
@@ -52,7 +52,7 @@ export function Nav() {
         <ul className="nav__lang" aria-label="Language">
           {LANGS.map((l) => (
             <li key={l}>
-              <Link
+              <Link viewTransition
                 to={pagePath(l, page)}
                 className={l === lang ? 'active' : undefined}
                 aria-current={l === lang ? 'true' : undefined}
