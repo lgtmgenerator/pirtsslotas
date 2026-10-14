@@ -1,0 +1,29 @@
+name: Deploy to Hostnet cPanel
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      CPANEL_HOST: https://cpanel-9.hostnet.lv:2083
+      CPANEL_USER: jdacom
+      REPO_ROOT: /home2/jdacom/repos/pirtsslotas
+    steps:
+      - name: Pull latest commit into the cPanel clone
+        run: |
+          curl -sS --fail -H "Authorization: cpanel $CPANEL_USER:${{ secrets.CPANEL_TOKEN }}" \
+            "$CPANEL_HOST/execute/VersionControl/update?repository_root=$REPO_ROOT&branch=main" | tee update.json
+          grep -q '"status":1' update.json
+      - name: Run .cpanel.yml deployment
+        run: |
+          curl -sS --fail -H "Authorization: cpanel $CPANEL_USER:${{ secrets.CPANEL_TOKEN }}" \
+            "$CPANEL_HOST/execute/VersionControlDeployment/create?repository_root=$REPO_ROOT" | tee deploy.json
+          grep -q '"status":1' deploy.json
