@@ -2,4 +2,6 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home2/jdacom/public_html/pirtsslotas
-    - /bin/tar --exclude=./.git --exclude=./.github --exclude=./.cpanel.yml --exclude=./.gitignore --exclude=./README.md -cf - . | /bin/tar -xf - -C $DEPLOYPATH
+    - umask 022
+    - /bin/tar --exclude=./.git --exclude=./.github --exclude=./.cpanel.yml --exclude=./.gitignore --exclude=./README.md -cf - . | /bin/tar --no-same-permissions -xf - -C $DEPLOYPATH
+    - /bin/chmod 755 $DEPLOYPATH
