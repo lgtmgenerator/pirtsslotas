@@ -7,7 +7,7 @@ export function NotFound() {
   const t = useMessages()
   return (
     <>
-      <Banner image="/gfx/productsheadernavback.jpg" ratio="1366 / 107" className="banner--strip" />
+      <Banner image="/gfx/productsheadernavback.webp" ratio="1366 / 107" className="banner--strip" />
       <section className="section not-found">
         <h2>404</h2>
         <Link viewTransition to={pagePath(lang, 'home')}>{t.nav.home}</Link>

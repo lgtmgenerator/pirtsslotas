@@ -6,7 +6,7 @@ import { usePageMeta } from '../components/usePageMeta'
 export function Contacts() {
   usePageMeta('contacts')
   const t = useMessages()
-  const image = useLang() === 'en' ? '/gfx/contacts-en-back.jpg' : '/gfx/contacts-lv-back.jpg'
+  const image = useLang() === 'en' ? '/gfx/contacts-en-back.webp' : '/gfx/contacts-lv-back.webp'
 
   return (
     <Banner image={image} ratio="1366 / 806" className="banner--contacts">

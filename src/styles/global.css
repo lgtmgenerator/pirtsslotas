@@ -235,20 +235,32 @@ img {
   width: 100%;
   aspect-ratio: 1366 / 647;
   overflow: hidden;
+  background: #2f3a2c;
 }
 
-.hero > img {
+.hero__slides {
+  position: absolute;
+  inset: 0;
+  transform: translateY(var(--parallax, 0px));
+  will-change: transform;
+}
+
+.hero__slides img {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
   opacity: 0;
-  transition: opacity 1.2s ease;
+  transform: scale(1);
+  transition:
+    opacity 1.4s ease,
+    transform 7s linear;
 }
 
-.hero > img.is-active {
+.hero__slides img.is-active {
   opacity: 1;
+  transform: scale(1.08);
 }
 
 .hero__button {
@@ -455,6 +467,77 @@ img {
   color: #000;
 }
 
+.product-dialog__counter {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  color: #6b6b6b;
+}
+
+.product-dialog__content {
+  animation: dialog-in 0.3s ease both;
+}
+
+@keyframes dialog-in {
+  from {
+    opacity: 0;
+  }
+}
+
+.product-dialog__arrow {
+  position: absolute;
+  top: 50%;
+  width: 40px;
+  height: 40px;
+  transform: translateY(-50%);
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: rgb(255 255 255 / 0.85);
+  color: var(--green);
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.2);
+  transition:
+    background 0.25s ease,
+    color 0.25s ease;
+}
+
+.product-dialog__arrow--prev {
+  left: 10px;
+}
+
+.product-dialog__arrow--next {
+  right: 10px;
+}
+
+.product-dialog__arrow:hover,
+.product-dialog__arrow:focus-visible {
+  background: var(--green);
+  color: #fff;
+}
+
+.product-dialog__arrow svg {
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2.2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* The tile <-> dialog image morph. */
+::view-transition-group(product-image) {
+  animation-duration: 0.4s;
+  animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+::view-transition-old(product-image),
+::view-transition-new(product-image) {
+  animation: none;
+  mix-blend-mode: normal;
+  object-fit: cover;
+}
+
 /* ---------- Stories carousel ---------- */
 
 .stories {
@@ -567,7 +650,7 @@ img {
   font-size: 13px;
   font-weight: 600;
   letter-spacing: 0.12em;
-  color: #777;
+  color: #595d61;
 }
 
 .story h2 {
@@ -594,21 +677,24 @@ img {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 6px;
-  margin-top: 24px;
+  gap: 2px;
+  margin-top: 18px;
   padding: 0 16px;
 }
 
+/* 24px tap target drawn as a 10px dot: the padding is transparent via background-clip. */
 .stories__dots button {
   position: relative;
-  width: 10px;
-  height: 10px;
-  border-radius: 5px;
+  width: 24px;
+  height: 24px;
+  padding: 7px;
+  border-radius: 12px;
   background: #b9bbbe;
+  background-clip: content-box;
   overflow: hidden;
   transition:
     width 0.35s ease,
-    background 0.3s ease;
+    background-color 0.3s ease;
 }
 
 .stories__dots button:hover {
@@ -616,13 +702,13 @@ img {
 }
 
 .stories__dots button.is-active {
-  width: 44px;
-  background: #b9bbbe;
+  width: 58px;
 }
 
 .stories__dots button.is-active span {
   position: absolute;
-  inset: 0;
+  inset: 7px;
+  border-radius: 5px;
   background: var(--green);
   transform-origin: left;
   transform: scaleX(0);
@@ -682,7 +768,7 @@ img {
 .footer {
   position: relative;
   color: #fff;
-  background: url('/gfx/footer-back.jpg') center / cover no-repeat;
+  background: url('/gfx/footer-back.webp') center / cover no-repeat;
 }
 
 .footer::before {
@@ -966,6 +1052,12 @@ img {
 
   .product-dialog__content > img {
     aspect-ratio: 16 / 10;
+  }
+
+  .product-dialog__arrow {
+    top: auto;
+    bottom: 12px;
+    transform: none;
   }
 
   .footer__inner {

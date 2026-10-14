@@ -23,7 +23,7 @@ export function Nav() {
   return (
     <nav className={`nav${open ? ' is-open' : ''}`} aria-label="Main">
       <Link viewTransition to={pagePath(lang, 'home')} className="nav__logo" aria-label={t.siteName}>
-        <img src="/gfx/logo-white.png" alt="" />
+        <img src="/gfx/logo-white.webp" alt="" />
       </Link>
 
       <button

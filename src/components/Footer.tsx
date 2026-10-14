@@ -85,7 +85,7 @@ export function Footer() {
         </address>
       </div>
       <div className="footer__bottom">
-        <img src="/gfx/logo-white.png" alt="" />
+        <img src="/gfx/logo-white.webp" alt="" />
         <span>© {YEAR} {t.siteName}</span>
       </div>
     </footer>

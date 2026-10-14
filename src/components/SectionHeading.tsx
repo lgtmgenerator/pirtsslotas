@@ -6,7 +6,7 @@ interface Props {
 export function SectionHeading({ head, sub }: Props) {
   return (
     <div className="section-heading">
-      <img className="section-heading__logo" src="/gfx/logo-section.png" alt="" />
+      <img className="section-heading__logo" src="/gfx/logo-section.webp" alt="" />
       <h2>{head}</h2>
       <p>{sub}</p>
       <span className="section-heading__line" />

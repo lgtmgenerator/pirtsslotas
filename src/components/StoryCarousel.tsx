@@ -73,7 +73,7 @@ export function StoryCarousel({ stories, randomStart = false, intervalMs = 8000 
                 aria-hidden={i !== index}
                 aria-label={`${i + 1} / ${count}`}
               >
-                <img className="story__symbol" src="/gfx/symbols/birch.png" alt="" />
+                <img className="story__symbol" src="/gfx/symbols/birch.webp" alt="" />
                 <div className="story__content">
                   <span className="story__counter">
                     {i + 1} / {count}
